@@ -1,0 +1,53 @@
+#drink {
+    animation: 1.25s linear spin infinite;
+    transition-duration: 0.5s;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #eeeeee;
+    font-weight: 800;
+}
+
+img {
+    filter: brightness(150%);
+}
+
+body {
+    background: #adbdcd;
+}
+
+aside {
+    right: 2.5%;
+    padding: 2.5vw;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+button:active {
+    transition-duration: 0.5s;
+    filter: hue-rotate(342deg);
+}
+
+:root {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #eeeeee !important;
+}
+
+.item {
+    list-style: none;
+    display: flex;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

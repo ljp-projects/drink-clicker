@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-au">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Clicker</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body data-clicks="0">
+    <h1>Drink Clicker</h1>
+
+    <h2><span id=coins>0</span> <img src="icons/coin.png" width="27.9px" height="30px" alt="Drink Clicker Bottle" draggable="false"></h2>
+
+    <button type="button" title="Click Me!" id="drink" data-level="1">
+        <img src="icons/blue_bottle.png" width="128px" height="128px" alt="Drink Clicker Bottle"
+            draggable="false">
+    </button>
+
+    <button type="button" title="Open Store!" id="store" data-open="false">
+        <img src="icons/store.png" width="128px" height="128px" alt="Drink Clicker Store Icon"
+            draggable="false">
+    </button>
+
+    <aside data-open="true" id="store-frame">
+        <h2>Store</h2>
+        <details>
+            <summary>
+              Bottles
+            </summary>
+            <ul>
+                <li class="item">
+                    <h3>Lime Bottle</h3>
+                    <img src="icons/lime_bottle.png" width="64px" height="64px" alt="Drink Clicker Lime Bottle Icon"
+            draggable="false">
+                    <button type="button" data-bought="false" id="buy-lime-bottle">BUY</button>
+                </li>
+                <li class="item">
+                    <h3>Lemon Bottle</h3>
+                    <img src="icons/lemon_bottle.png" width="64px" height="64px" alt="Drink Clicker Bottle Icon"
+            draggable="false">
+                    <button type="button" data-bought="false" id="buy-lemon-bottle">BUY</button>
+                </li>
+                <li class="item">
+                    <h3>Cherry Bottle</h3>
+                    <img src="icons/cherry_bottle.png" width="64px" height="64px" alt="Drink Clicker Bottle Icon"
+            draggable="false">
+                    <button type="button" data-bought="false" id="buy-cherry-bottle">BUY</button>
+                </li>
+            </ul>
+        </details>
+    </aside>
+
+    <script src="js/index.js" defer></script>
+</body>
+
+</html>
